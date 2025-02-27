@@ -35,6 +35,7 @@ function QuizItem() {
         <li>Oklahoma City Thunder</li>
         <li>Phoenix Suns</li>
       </ul>
+      <button className='btn'>Next</button>
     </div>
   )
 }

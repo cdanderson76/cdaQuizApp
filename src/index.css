@@ -40,6 +40,7 @@ img {
 }
 
 .container h2 {
+  font-size: 1.1rem;
   margin-bottom: 1em;
 }
 
@@ -73,9 +74,33 @@ li {
   transition: 0.5s ease-in-out;
 }
 
+.btn {
+  width: 50%;
+  margin-left: 25%;
+  color: #fff;
+  background-color: #700670;
+  padding: 0.5em;
+  border: 2px solid #ffffffd5;
+  border-radius: 10px;
+}
+
 li:hover {
   border-radius: 20px;
   cursor: pointer;
   background-color: #0e0e0e86;
   color: #fff;
+}
+
+.correct {
+  border: 2px solid #024b02;
+  background: #63c763;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.wrong {
+  border: 2px solid #700606;
+  background-color: #fa5757;
+  color: #fff;
+  border-radius: 20px;
 }
