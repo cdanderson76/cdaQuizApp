@@ -1,20 +1,19 @@
 import { useState, useRef } from 'react'
 import { data } from './data';
 import './index.css'
-import delta from './images/delta-center.jpg';
 
 export default function App() {
 
   return (
     <>
       <div className='canvas'>
-        <Quiz data={data} />
+        <Quiz data={data}/>
       </div>
     </>
   )
 }
 
-function Quiz({data}) {
+function Quiz({data, shows}) {
 
   const [ questionIndex, setQuestionIndex ] = useState(0);
   const [ answerLock, setAnswerLock ] = useState(false);
@@ -55,11 +54,11 @@ function Quiz({data}) {
   return (
     <div className='container'>
       <h1>Quiz App</h1>
-      <h3>(Stadiums and Arenas)</h3>
+      <h3>({current.title})</h3>
       <hr />
       <div className='question-container'>
         <h2>{current.question}</h2>
-        <img src={current.facility} alt="" />
+        { current.facility && <img src={current.facility} alt="" /> }
         <ul>
           <li ref={answer1} onClick={(e) => checkAnswer(e, 1)}>{current.option1}</li>
           <li ref={answer2} onClick={(e) => checkAnswer(e, 2)}>{current.option2}</li>
