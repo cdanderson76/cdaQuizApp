@@ -13,7 +13,7 @@ export default function App() {
   )
 }
 
-function Quiz({data, shows}) {
+function Quiz({data}) {
 
   const [ questionIndex, setQuestionIndex ] = useState(0);
   const [ answerLock, setAnswerLock ] = useState(false);
