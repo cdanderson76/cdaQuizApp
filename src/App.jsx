@@ -16,6 +16,7 @@ export default function App() {
 function Quiz({data}) {
 
   const [ questionIndex, setQuestionIndex ] = useState(0);
+  const [ score, setScore ] = useState(0);
   const [ answerLock, setAnswerLock ] = useState(false);
 
   const current = data[questionIndex];
@@ -57,7 +58,7 @@ function Quiz({data}) {
       <h3>({current.title})</h3>
       <hr />
       <div className='question-container'>
-        <h2>{current.question}</h2>
+        <h2>{questionIndex + 1}. {current.question}</h2>
         { current.facility && <img src={current.facility} alt="" /> }
         <ul>
           <li ref={answer1} onClick={(e) => checkAnswer(e, 1)}>{current.option1}</li>
@@ -66,6 +67,7 @@ function Quiz({data}) {
           <li ref={answer4} onClick={(e) => checkAnswer(e, 4)}>{current.option4}</li>
         </ul>
         <button className='btn' onClick={nextQuestion}>Next</button>
+        <p>question {questionIndex + 1} out of {data.length}</p>
       </div>
     </div>
   )
