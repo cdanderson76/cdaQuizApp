@@ -157,7 +157,7 @@ export const data = [
 
     {
         title: 'NBA Athletes',
-        question: 'What NBA basketball player was picked at #5 by the Dallas Mavericks in order to trade for Luka Doncic at #3 by the Atlanta Hawks?',
+        question: 'What NBA basketball player was picked at #5 by the Dallas Mavericks in order to trade up for Luka Doncic, who was acquired by the Atlanta Hawks at #3?',
         facility: trivia,
         option1: 'Trae Young',
         option2: 'Jaren Jackson Jr.',

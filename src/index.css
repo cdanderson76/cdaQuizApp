@@ -121,3 +121,11 @@ li:hover {
   color: #fff;
   border-radius: 20px;
 }
+
+.summary img {
+  width: 100%;
+}
+
+.summary .btn {
+  text-transform: uppercase;
+}
