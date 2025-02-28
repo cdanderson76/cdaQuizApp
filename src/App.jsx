@@ -21,6 +21,7 @@ function Quiz({data}) {
 
   const [ questionIndex, setQuestionIndex ] = useState(0);
   const [ score, setScore ] = useState(0);
+  const [ isLoading, setIsLoading ] = useState(false);
   const [ answerLock, setAnswerLock ] = useState(false);
 
   const current = data[questionIndex];
@@ -55,6 +56,11 @@ function Quiz({data}) {
         setAnswerLock(false);
       })
     }
+  }
+
+  function restart() {
+    setScore(0);
+    setQuestionIndex(0)
   }
 
   const scoreStyle = {
