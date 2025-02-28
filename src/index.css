@@ -122,6 +122,11 @@ li:hover {
   border-radius: 20px;
 }
 
+.question-container .questions,
+.question-container .score {
+  font-size: 1.5rem;
+}
+
 .summary img {
   width: 100%;
 }
