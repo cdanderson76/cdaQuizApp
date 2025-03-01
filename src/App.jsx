@@ -65,6 +65,14 @@ function Quiz({data}) {
     }
   };
 
+  function submitAns() {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+      nextQuestion();
+    }, 2000)
+  }
+
   function restart() {
     setIsLoading(true)
     setTimeout(() => {
@@ -100,9 +108,18 @@ function Quiz({data}) {
               <li ref={answer3} onClick={(e) => checkAnswer(e, 3)}>{current.option3}</li>
               <li ref={answer4} onClick={(e) => checkAnswer(e, 4)}>{current.option4}</li>
             </ul>
-            <button className='btn' onClick={nextQuestion}>
-              { questionIndex + 1 === data.length ? 'Submit' : 'Next' }
-            </button>
+            { questionIndex + 1 === data.length ?
+              <>
+                <button className='btn' onClick={submitAns}>
+                  Submit
+                </button>
+              </> :
+              <>
+                <button className='btn' onClick={nextQuestion}>
+                  Next
+                </button>
+              </>
+            }
             { questionIndex + 1 !== data.length && <p>question {questionIndex + 1} out of {data.length}</p> }
           </div>
         </> :
