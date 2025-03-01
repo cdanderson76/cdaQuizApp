@@ -97,17 +97,6 @@ li {
   transition: 0.3s ease-in-out;
 }
 
-li:hover {
-  border-radius: 20px;
-  cursor: pointer;
-  border-color: #6158588f;
-}
-
-.btn:hover {
-  cursor: pointer;
-  background-color: #7a177a;
-}
-
 .correct {
   border: 2px solid #024b02;
   background: #63c763;
@@ -133,4 +122,15 @@ li:hover {
 
 .summary .btn {
   text-transform: uppercase;
+}
+
+li:hover {
+  border-radius: 20px;
+  cursor: pointer;
+  border-color: #6158588f;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #7a177a;
 }
