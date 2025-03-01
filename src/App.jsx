@@ -5,6 +5,7 @@ import './index.css'
 import fail from './images/fail.gif';
 import alright from './images/alright.gif';
 import great from './images/great.gif';
+import loader from './images/dual_ball.svg';
 
 export default function App() {
 
@@ -33,6 +34,12 @@ function Quiz({data}) {
 
   const option_array = [ answer1, answer2, answer3, answer4 ];
 
+  if(isLoading) {
+    return (
+      <Loading />
+    )
+  }
+
   function checkAnswer(e, ans) {
     if(answerLock === false) {
       if(current.ans === ans) {
@@ -56,16 +63,26 @@ function Quiz({data}) {
         setAnswerLock(false);
       })
     }
-  }
+  };
 
   function restart() {
-    setScore(0);
-    setQuestionIndex(0)
+    setIsLoading(true)
+    setTimeout(() => {
+      setScore(0);
+      setQuestionIndex(0);
+      setIsLoading(false);
+    }, 2000);
+  };
+
+  function Loading() {
+    return (
+      <img src={loader} alt='loading animation of two spheres circling' />
+    )
   }
 
   const scoreStyle = {
     color: score <= 5 ? 'red' : score <= 12 ? '#d58c28' : '#288d27'
-  }
+  };
   
   return (
     <div className='container'>
@@ -99,11 +116,11 @@ function Quiz({data}) {
             <div className='summary'>
               { score <= 5 &&   <>
                                   <img src={fail} alt="Stephen A Smith rolling his eyes at you" />
-                                  <h3>Stephen A thinks you know absolutely NOTHING about the NFL and NBA 🫢</h3>
+                                  <h3>Stephen A thinks you know absolutely NOTHING about the NFL and NBA 😑</h3>
                                 </> 
               }
 
-              { score <= 12 &&  <>
+              { score > 5 && score <= 12 &&  <>
                                   <img src={alright} alt='Stephen A Smith asking to help you out' />
                                   <h3>Stephen A wants you to get your mind right, and try again 🤦🏾‍♂️</h3>
                                 </>
@@ -117,11 +134,11 @@ function Quiz({data}) {
                                 <h3>Stephen A approves this message!! 🔥🔥🔥</h3>
                               </>
               }
-              <button className="btn">Restart</button>
+              <button className="btn" onClick={restart}>Restart</button>
             </div>
           </div>
         </>
       }
     </div>
   )
-}
+};
