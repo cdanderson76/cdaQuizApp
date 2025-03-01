@@ -14,7 +14,7 @@ import nfltriv from './images/nfltriv.jpg';
 export const data = [
     {
         title: 'Teams, Stadiums, and Arenas',
-        question: 'What NBA basketball team host home games in this arena?',
+        question: 'What NBA basketball team hosts home games in this arena?',
         facility: delta,
         option1: 'Chicago Bulls',
         option2: 'Utah Jazz',
@@ -47,7 +47,7 @@ export const data = [
 
     {
         title: 'Teams, Stadiums, and Arenas',
-        question: 'What NBA basketball team host home games in this arena?',
+        question: 'What NBA basketball team hosts home games in this arena?',
         facility: paycom,
         option1: 'Chicago Bulls',
         option2: 'Utah Jazz',
@@ -58,7 +58,7 @@ export const data = [
 
     {
         title: 'Teams, Stadiums, and Arenas',
-        question: 'What NFL football team host home games in this stadium?',
+        question: 'What NFL football team hosts home games in this stadium?',
         facility: allegiant,
         option1: 'Dallas Cowboys',
         option2: 'Minnesota Vikings',
@@ -80,7 +80,7 @@ export const data = [
 
     {
         title: 'Teams, Stadiums, and Arenas',
-        question: 'What NBA basketball team host home games in this arena?',
+        question: 'What NBA basketball team hosts home games in this arena?',
         facility: fedex,
         option1: 'Memphis Grizzlies',
         option2: 'Indiana Pacers',
@@ -91,7 +91,7 @@ export const data = [
 
     {
         title: 'Teams, Stadiums, and Arenas',
-        question: 'What NBA basketball team host home games in this arena?',
+        question: 'What NBA basketball team hosts home games in this arena?',
         facility: fiserv,
         option1: 'Phoenix Suns',
         option2: 'Houston Rockets',
@@ -113,7 +113,7 @@ export const data = [
 
     {
         title: 'Teams, Stadiums, and Arenas',
-        question: 'What NFL football team host home games in this stadium?',
+        question: 'What NFL football team hosts home games in this stadium?',
         facility: levi,
         option1: 'Cincinatti Bengals',
         option2: 'Kansas City Cheifs',
@@ -124,7 +124,7 @@ export const data = [
 
     {
         title: 'Teams, Stadiums, and Arenas',
-        question: 'What NBA basketball team host home games in this arena?',
+        question: 'What NBA basketball team hosts home games in this arena?',
         facility: intuit,
         option1: 'Golden State Warriors',
         option2: 'Miami Heat',
@@ -135,7 +135,7 @@ export const data = [
 
     {
         title: 'Teams, Stadiums, and Arenas',
-        question: 'What NFL football team host home games in this stadium?',
+        question: 'What NFL football team hosts home games in this stadium?',
         facility: lumen,
         option1: 'Seattle Seahawks',
         option2: 'Philidelphia Eagles',
@@ -146,7 +146,7 @@ export const data = [
 
     {
         title: 'Teams, Stadiums, and Arenas',
-        question: 'What NBA basketball team host home games in this arena?',
+        question: 'What NBA basketball team hosts home games in this arena?',
         facility: littlecaesars,
         option1: 'Detroit Pistons',
         option2: 'Memphis Grizzlies',
@@ -168,7 +168,7 @@ export const data = [
 
     {
         title: 'Teams, Stadiums, and Arenas',
-        question: 'What NFL football team host home games in this stadium?',
+        question: 'What NFL football team hosts home games in this stadium?',
         facility: lucas,
         option1: 'Pittsburg Steelers',
         option2: 'Detroit Lions',
