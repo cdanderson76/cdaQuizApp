@@ -90,8 +90,6 @@ li {
 }
 
 .start-btn, .btn {
-  width: 35%;
-  width: 35%;
   color: #fff;
   background-color: #700670;
   font-family: 'Mulish', sans-serif;
@@ -107,9 +105,11 @@ li {
 
 .start-btn {
   margin-left: 31.5%;
+  width: 37%;
 }
 
 .btn {
+  width: 35%;
   margin-left: 33%;
   margin-top: 1em;
 }

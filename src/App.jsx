@@ -25,8 +25,13 @@ export default function App() {
 }
 
 function Intro({toggleStart}) {
+
+  const myMargin = {
+    margintTop: '1.5em'
+  }
+
   return (
-    <div className='container'>
+    <div className='container' style={myMargin}>
       <h1>The Quiz App</h1>
       <hr />
       <div className="question-container">
