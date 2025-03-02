@@ -17,12 +17,12 @@ export default function Summary({fail, alright, great, score, data, restart}) {
         <div className='summary'>
           { score <= 5 &&   <>
                               <img src={fail} alt="Stephen A Smith rolling his eyes at you" />
-                              <h3>Stephen A thinks you know absolutely NOTHING about the NFL and NBA 😑</h3>
+                              <h3>Stephen A thinks that you know absolutely NOTHING about the NFL or the NBA 😑</h3>
                             </> 
           }
           { score > 5 && score <= 12 &&  <>
                               <img src={alright} alt='Stephen A Smith asking to help you out' />
-                              <h3>Stephen A wants you to get your mind right, and try again 🤦🏾‍♂️</h3>
+                              <h3>Stephen A is not impressed, and wants you to try again 🤦🏾‍♂️</h3>
                             </>
           }
           { 

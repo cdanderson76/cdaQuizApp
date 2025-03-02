@@ -99,7 +99,7 @@ export default function Quiz({data}) {
                     </button>
                   </>
                 }
-                { questionIndex + 1 !== data.length && <p>question {questionIndex + 1} out of {data.length}</p> }
+                { questionIndex + 1 <= data.length && <p>question {questionIndex + 1} out of {data.length}</p> }
               </div>
             </> :
             <Summary fail={fail}

@@ -35,6 +35,12 @@ img {
   border-radius: 6px;
 }
 
+.subtitle {
+  font-size: 1.4rem;
+  text-align: center;
+  /* margin-bottom: 0.5em; */
+}
+
 .container h1 {
   margin-bottom: 0.4em;
 }
@@ -81,9 +87,9 @@ li {
   margin-bottom: 0.5em;
 }
 
-.btn {
+.start-btn, .btn {
   width: 35%;
-  margin-left: 33%;
+  width: 35%;
   color: #fff;
   background-color: #700670;
   font-family: 'Mulish', sans-serif;
@@ -93,8 +99,16 @@ li {
   padding: 0.7em;
   border: 2px solid #ffffffd5;
   border-radius: 10px;
-  margin-top: 0.6em;
+  margin-top: 3em;
   transition: 0.3s ease-in-out;
+}
+
+.start-btn {
+  margin-left: 31.5%;
+}
+
+.btn {
+  margin-left: 33%;
 }
 
 .correct {
@@ -130,7 +144,8 @@ li:hover {
   border-color: #6158588f;
 }
 
-.btn:hover {
+.btn:hover,
+.start-btn:hover {
   cursor: pointer;
   background-color: #7a177a;
 }
